@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/magnitudeView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="8.9" />
+
+    <TextView
+        android:id="@+id/placeview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/textColorEarthquakeLocation"
+        tools:text="cannada"/>
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:padding="8dp">
+
+       <TextView
+           android:id="@+id/dateView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:textColor="@color/textColorEarthquakeDetails"
+           android:textSize="12sp"
+           tools:text="Mar 6, 2010" />
+
+       <TextView
+           android:id="@+id/timeView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"
+           android:textColor="@color/textColorEarthquakeDetails"
+           android:textSize="12sp"
+           tools:text="3:00 PM" />
+
+   </LinearLayout>
+
+
+</LinearLayout>
